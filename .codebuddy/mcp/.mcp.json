@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ]
+    },
+    "tapd_mcp_http": {
+      "type": "http",
+      "url": "https://mcp-oa.tapd.woa.com/mcp/",
+      "timeout": 20000,
+      "headers": {
+        "X-Tapd-Access-Token": "xxxxx"
+      }
+    },
+    "Playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@executeautomation/playwright-mcp-server"
+      ],
+      "env": {}
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ]
+    }
+  }
+}
